@@ -9,4 +9,4 @@ This package contains useful UnityEditor methods that can be assigned to hotkeys
 * Toggle warnings
 * Toggle errors
 
-![](https://raw.githubusercontent.com/ifgenius/RepoContents/main/Content/Console.gif)
+![](https://raw.githubusercontent.com/ifgenius/RepoContents/master/UnityShortcuts/console-shortcuts.gif)
