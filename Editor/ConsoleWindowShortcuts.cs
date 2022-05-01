@@ -7,7 +7,7 @@ namespace Shortcuts
 {
   public static class ConsoleWindowShortcuts
   {
-    [MenuItem("Tools/Console/Clear")]
+    [MenuItem("Tools/Console/Clear &c")]
     public static void Clear()
     {
       var assembly = Assembly.GetAssembly(typeof(Editor));
@@ -16,15 +16,15 @@ namespace Shortcuts
       method?.Invoke(new object(), null);
     }
 
-    [MenuItem("Tools/Console/ToggleLogs")]
+    [MenuItem("Tools/Console/ToggleLogs &1")]
     public static void ToggleLog() =>
       ToggleFlag("LogLevelLog");
 
-    [MenuItem("Tools/Console/ToggleWarnings")]
+    [MenuItem("Tools/Console/ToggleWarnings &2")]
     public static void ToggleWarning() =>
       ToggleFlag("LogLevelWarning");
 
-    [MenuItem("Tools/Console/ToggleErrors")]
+    [MenuItem("Tools/Console/ToggleErrors &3")]
     public static void ToggleErrors() =>
       ToggleFlag("LogLevelError");
 

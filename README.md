@@ -1,12 +1,16 @@
 ﻿# Unity Editor shortcuts
 
-This package contains useful UnityEditor methods that can be assigned to hotkeys
+This package contains useful UnityEditor methods
 
-# Console
+You can reassign shortcuts in `Edit/Shortcuts`
 
-* Clear console
-* Toggle info logs
-* Toggle warnings
-* Toggle errors
+## Console
+
+Located at `Tools/Console`
+
+* Clear console `(Alt + C)`
+* Toggle logs `(Alt + 1)`
+* Toggle warnings `(Alt + 2)`
+* Toggle errors `(Alt + 3)`
 
 ![](https://raw.githubusercontent.com/ifgenius/RepoContents/master/UnityShortcuts/console-shortcuts.gif)
