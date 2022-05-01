@@ -1,0 +1,13 @@
+﻿{
+  "name": "com.ifgenius.shortcuts",
+  "version": "0.1.0",
+  "displayName": "Shortcuts",
+  "description": "UnityEditor shortcuts",
+  "unity": "2021.3",
+  "unityRelease": "0f1",
+  "keywords": [
+    "UnityEditor",
+    "Editor",
+    "Shortcuts"
+  ]
+}
