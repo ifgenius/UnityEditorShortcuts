@@ -3,34 +3,34 @@ using System.Reflection;
 using UnityEditor;
 using static System.Reflection.BindingFlags;
 
-namespace Shortcuts
+namespace Shortcuts.Editor
 {
   public static class ConsoleWindowShortcuts
   {
-    [MenuItem("Tools/Console/Clear &c")]
+    [MenuItem(Constants.BasePath + "Console/Clear &c")]
     public static void Clear()
     {
-      var assembly = Assembly.GetAssembly(typeof(Editor));
+      var assembly = Assembly.GetAssembly(typeof(UnityEditor.Editor));
       var type = assembly.GetType("UnityEditor.LogEntries");
       var method = type.GetMethod("Clear");
       method?.Invoke(new object(), null);
     }
 
-    [MenuItem("Tools/Console/ToggleLogs &1")]
+    [MenuItem(Constants.BasePath + "Console/ToggleLogs &1")]
     public static void ToggleLog() =>
       ToggleFlag("LogLevelLog");
 
-    [MenuItem("Tools/Console/ToggleWarnings &2")]
+    [MenuItem(Constants.BasePath + "Console/ToggleWarnings &2")]
     public static void ToggleWarning() =>
       ToggleFlag("LogLevelWarning");
 
-    [MenuItem("Tools/Console/ToggleErrors &3")]
+    [MenuItem(Constants.BasePath + "Console/ToggleErrors &3")]
     public static void ToggleErrors() =>
       ToggleFlag("LogLevelError");
 
     private static void ToggleFlag(string flagName)
     {
-      var assembly = Assembly.GetAssembly(typeof(Editor));
+      var assembly = Assembly.GetAssembly(typeof(UnityEditor.Editor));
       var consoleWindowType = assembly.GetType("UnityEditor.ConsoleWindow");
       var consoleFlagsType = assembly.GetType("UnityEditor.ConsoleWindow+ConsoleFlags");
 
