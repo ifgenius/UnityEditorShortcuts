@@ -9,5 +9,9 @@
     "UnityEditor",
     "Editor",
     "Shortcuts"
-  ]
+  ],
+  "author": {
+    "name":"Eugene Sazonov",
+    "email":"ifgenius.dev@gmail.com"
+  }
 }
