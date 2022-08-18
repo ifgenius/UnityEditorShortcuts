@@ -8,7 +8,7 @@ namespace Shortcuts.Editor
 {
   public static class InspectorShortCuts
   {
-    [MenuItem(Constants.BasePath + "Inspector/Toggle Mode ^#d")]
+    [MenuItem(Constants.BasePath + "Inspector/Toggle inspector debug mode ^#d")]
     private static void ToggleInspectorMode()
     {
       var editorWindow = EditorWindow.focusedWindow;

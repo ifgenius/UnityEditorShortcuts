@@ -24,7 +24,11 @@ You can reassign shortcuts in `MainMenu/Edit/Shortcuts`
 
 <img src="https://raw.githubusercontent.com/ifgenius/RepoContents/master/UnityShortcuts/FocusNearWindows1.gif" height="450"/>
 
-* Lock/Unlock focused window `Ctrl + Shift + E`
+* Close focused window 
+
+<img src="https://raw.githubusercontent.com/ifgenius/RepoContents/master/UnityShortcuts/CloseFocusedWindow.gif" height="450"/>
+
+* Lock/Unlock focused window `Ctrl + Space`
 
 <img src="https://raw.githubusercontent.com/ifgenius/RepoContents/master/UnityShortcuts/LockWindow.gif"/>
 

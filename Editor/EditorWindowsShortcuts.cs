@@ -9,13 +9,20 @@ namespace Shortcuts.Editor
 {
   public static class EditorWindowsShortcuts
   {
+    [MenuItem(Constants.BasePath + "Window/Close Active Window ^F4")]
+    public static void CloseActiveWindow()
+    {
+      if (EditorWindow.focusedWindow != null)
+        EditorWindow.focusedWindow.Close();
+    }
+
     [MenuItem(Constants.BasePath + "Window/FocusLeft &[")]
     private static void FocusLeftWindow()
     {
       var editorWindow = EditorWindow.focusedWindow;
       var window = WindowNeighbours(editorWindow)?.PreviousOf(editorWindow);
-      
-      if (window != null) 
+
+      if (window != null)
         window.Focus();
     }
 
@@ -24,8 +31,8 @@ namespace Shortcuts.Editor
     {
       var editorWindow = EditorWindow.focusedWindow;
       var window = WindowNeighbours(editorWindow)?.NextOf(editorWindow);
-      
-      if (window != null) 
+
+      if (window != null)
         window.Focus();
     }
 
@@ -43,8 +50,8 @@ namespace Shortcuts.Editor
 
       return panes.As<List<EditorWindow>>();
     }
-    
-    [MenuItem(Constants.BasePath + "Window/Toggle Active Window Lock ^#e")]
+
+    [MenuItem(Constants.BasePath + "Window/Toggle Active Window Lock ^SPACE")]
     private static void ToggleActiveWindowLock()
     {
       var editorWindow = EditorWindow.focusedWindow;
@@ -68,7 +75,7 @@ namespace Shortcuts.Editor
 
       editorWindow.Repaint();
     }
-    
+
     private static void ToggleLockedHierarchy(EditorWindow window, Type windowType)
     {
       var sceneHierarchyField = windowType
