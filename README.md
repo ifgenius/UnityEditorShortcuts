@@ -20,6 +20,9 @@ You can reassign shortcuts in `MainMenu/Edit/Shortcuts`
 * Focus left pinned window `Alt + [`
 * Focus right pinned window `Alt + ]`
 
+> Can be very useful in conjunction with the default Unity shortcuts that allow focusing windows such as <br>
+> Main Menu/Window/General/Hierarchy (Inspector, Project, etc..)
+
 <img src="https://raw.githubusercontent.com/ifgenius/RepoContents/master/UnityShortcuts/FocusNearWindows.gif" height="450"/>
 
 <img src="https://raw.githubusercontent.com/ifgenius/RepoContents/master/UnityShortcuts/FocusNearWindows1.gif" height="450"/>
